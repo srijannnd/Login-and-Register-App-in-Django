@@ -13,4 +13,20 @@ Other CSS and JS files are already included.<br><br>
 1. Install the dependencies using pip command in terminal or command prompt for windows<br>
 2. navigate to 'simplesocial' directory in the project folder on command prompt<br>
 3. enter 'python manage.py runserver'<br>
-4. open your web browser and go to link 'http://127.0.0.1:8000/'<br>
+4. open your web browser and go to link 'http://127.0.0.1:8000/'<br><br>
+
+![alt text](https://github.com/srijannnd/Login-and-Register-App-in-Django/blob/master/screenshots/1welcome.png)<br>
+
+![alt text](https://github.com/srijannnd/Login-and-Register-App-in-Django/blob/master/screenshots/2login.png)<br>
+
+![alt text](https://github.com/srijannnd/Login-and-Register-App-in-Django/blob/master/screenshots/3signup.png)<br>
+
+![alt text](https://github.com/srijannnd/Login-and-Register-App-in-Django/blob/master/screenshots/4confirm_mail.png)<br>
+
+![alt text](https://github.com/srijannnd/Login-and-Register-App-in-Django/blob/master/screenshots/5token.png)<br>
+
+![alt text](https://github.com/srijannnd/Login-and-Register-App-in-Django/blob/master/screenshots/6mail_confirmed.png)<br>
+
+![alt text](https://github.com/srijannnd/Login-and-Register-App-in-Django/blob/master/screenshots/7dashboard.png)<br>
+
+![alt text](https://github.com/srijannnd/Login-and-Register-App-in-Django/blob/master/screenshots/8logout.png)<br>
