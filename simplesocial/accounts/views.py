@@ -16,12 +16,6 @@ from django.core.mail import EmailMessage
 # Create your views here.
 
 
-class SignUp(CreateView):
-    form_class = forms.UserCreateForm
-    success_url = reverse_lazy('login')
-    template_name = 'accounts/signup.html'
-
-
 def signup(request):
     if request.method == 'POST':
         form = UserCreateForm(request.POST)

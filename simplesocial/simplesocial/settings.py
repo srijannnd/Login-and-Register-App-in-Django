@@ -132,3 +132,4 @@ EMAIL_HOST_USER = 'srijanappdev@gmail.com'
 EMAIL_HOST_PASSWORD = 'app@password'
 EMAIL_USE_TLS = True
 
+AUTHENTICATION_BACKENDS = ['simplesocial.auth_backends.EmailOrUsernameModelBackend']
