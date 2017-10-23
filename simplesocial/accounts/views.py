@@ -56,3 +56,23 @@ def activate(request, uidb64, token):
         return render(request, 'accounts/activated_mail.html')
     else:
         return HttpResponse('Activation link is invalid!')
+
+from django.contrib.auth import get_user_model
+from django.contrib.auth.backends import ModelBackend
+
+
+class EmailBackend(ModelBackend):
+    def authenticate(self, username=None, password=None, **kwargs):
+        UserModel = get_user_model()
+        if '@' in username:
+            kwargs = {'email': username}
+        else:
+            kwargs = {'username': username}
+        try:
+            user = UserModel.objects.get(**kwargs)
+        except UserModel.DoesNotExist:
+            return None
+        else:
+            if getattr(user, 'is_active', False) and user.check_password(password):
+                return user
+        return None

@@ -11,7 +11,7 @@ class UserCreateForm(UserCreationForm):
     email = forms.EmailField(max_length=200, help_text='Required')
 
     class Meta:
-        fields = ('first_name', 'username', 'email', 'password1', 'password2', 'captcha')
+        fields = ('first_name', 'email', 'username', 'password1', 'password2', 'captcha')
         model = get_user_model()
 
     def __init__(self, *args, **kwargs):
