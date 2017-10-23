@@ -29,6 +29,7 @@
 <body>
   <nav class="navbar navbar-fixed-top mynav" role="navigation" id="navbar">
     <div class="container-fluid">
+        <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -36,8 +37,10 @@
         </button>
 
         <a class="navbar-brand mynav" href="{% url 'home' %}"><strong>Srijan</strong> Anand</a>
-        <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
+        </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav pull-right">
         {% if user.is_authenticated %}
           <li><a href="{% url 'accounts:logout' %}"><span class="glyphicon glyphicon-log-out"></span>LogOut</a></li>
           {% else %}

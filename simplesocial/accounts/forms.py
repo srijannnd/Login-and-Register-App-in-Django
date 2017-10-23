@@ -8,6 +8,7 @@ class UserCreateForm(UserCreationForm):
 
     captcha = CaptchaField()
     mobile = forms.CharField(max_length=50, required=True, help_text='Required.')
+    email = forms.EmailField(max_length=200, help_text='Required')
 
     class Meta:
         fields = ('username', 'mobile', 'email', 'password1', 'password2', 'captcha')
