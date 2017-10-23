@@ -17,7 +17,7 @@ class UserCreateForm(UserCreationForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['first_name'].label = 'Name'
-        self.fields['email'].label = 'Email Address'
+        self.fields['email'].label = 'Email'
         self.fields['username'].label = 'Mobile Number'
         self.fields['captcha'].label = 'Captcha'
         for fieldname in ['first_name', 'username', 'email', 'password1', 'password2', 'captcha']:
