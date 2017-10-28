@@ -25,7 +25,13 @@ class UserCreateForm(UserCreationForm):
             self.fields[fieldname].help_text = None
 
 
-class PasswordResetRequestForm(forms.Form):
-    email_or_username = forms.CharField(label=("Email Or Username"), max_length=254)
+class SetPassword(SetPasswordForm):
 
+    class Meta:
+        fields = ('new_password1', 'new_password2')
+        model = get_user_model()
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for fieldname in ['new_password1', 'new_password2']:
+            self.fields[fieldname].help_text = None
