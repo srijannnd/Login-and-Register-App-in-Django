@@ -1,7 +1,8 @@
 from django.contrib.auth import get_user_model
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, SetPasswordForm
 from django import forms
 from captcha.fields import CaptchaField
+from .models import User
 
 
 class UserCreateForm(UserCreationForm):
@@ -26,3 +27,5 @@ class UserCreateForm(UserCreationForm):
 
 class PasswordResetRequestForm(forms.Form):
     email_or_username = forms.CharField(label=("Email Or Username"), max_length=254)
+
+
