@@ -25,4 +25,6 @@ urlpatterns = [
     url(r'^test/$', views.TestPage.as_view(), name='test'),
     url(r'^thanks/$', views.ThanksPage.as_view(), name='thanks'),
     url(r'^captcha/', include('captcha.urls')),
+    url(r'^groups/', include('groups.urls', namespace='groups')),
+    url(r'^posts/', include('posts.urls', namespace='posts')),
 ]

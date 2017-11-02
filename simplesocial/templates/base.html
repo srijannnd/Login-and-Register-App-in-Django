@@ -42,8 +42,12 @@
             <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav pull-right">
         {% if user.is_authenticated %}
+          <li><a href="{% url 'posts:create' %}">Post</a></li>
+          <li><a href="{% url 'groups:all' %}">Groups</a></li>
+          <li><a href="{% url 'groups:create' %}">Create Group</a></li>
           <li><a href="{% url 'accounts:logout' %}"><span class="glyphicon glyphicon-log-out"></span>LogOut</a></li>
           {% else %}
+          <li><a href="{% url 'groups:all' %}">Groups</a></li>
           <li><a href="{% url 'accounts:login' %}"><span class="glyphicon glyphicon-log-in"></span>LogIn</a></li>
           <li><a href="{% url 'accounts:signup' %}"><span class="glyphicon glyphicon-user"></span>SignUp</a></li>
         {% endif %}

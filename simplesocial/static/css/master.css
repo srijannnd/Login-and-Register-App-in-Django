@@ -29,7 +29,11 @@ form {
     margin-top: 0em;
     background: #ffffff;
     max-width: 400px;
-    padding: 10px 20px 20px 20px;
+}
+
+.form-0 {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .btn-0 {

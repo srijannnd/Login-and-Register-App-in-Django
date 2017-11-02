@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'bootstrap3',
     'accounts',
     'captcha',
+    'groups',
+    'posts',
 ]
 
 MIDDLEWARE = [
