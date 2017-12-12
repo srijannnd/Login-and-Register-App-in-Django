@@ -1,7 +1,9 @@
 # Login-and-Register-App-in-Django
 
 Dependencies - Django==1.11.4, django-simple-captcha==0.5.5, django-bootstrap3==9.0.0<br>
-Other CSS and JS files are already included.<br><br>
+Other CSS and JS files are already included.
+Demo Link: https://login-and-register-app-in-django-qhgpkmnark.now.sh/
+<br><br>
 
 # Functionality -<br>
 1. Login with Email/Mobile no.<br>
